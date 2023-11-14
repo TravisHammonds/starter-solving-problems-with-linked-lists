@@ -2,7 +2,7 @@ function josephus(list, m) {
   //   declare variable node and initialize it to the head
   let node = list.head;
   //   declare variable tail and initialize it to the last node in the list
-  const tail = list.fint((node) => !node.next);
+  const tail = list.find((node) => !node.next);
   //   assign the next pointer of the tail to the head of the list
   tail.next = list.head;
   //   while there are more than one nodes left do:
